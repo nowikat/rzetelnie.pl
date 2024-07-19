@@ -1,0 +1,86 @@
+*   { margin: 0; 
+    padding: 0;
+    font-family: Open, Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+/* jeśli jest gwiazdka(*) to odnosi sie do wszystkiego */
+/* jeśli w margin są cztery wartości, to okreslają one po kolei: góra, prawo, dół, lewo */
+body {background-color: #ddb;}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    background-color: darkcyan;
+    display: flex;
+}
+
+a.menu {
+    display: inline-block;
+    width: 25%;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a.menu:hover {
+    font-size: 20px;
+    background-color: crimson;
+}
+/*jeśli dodajemy hover do jakiegoś elementu, to mówi podkreśla/zaznacza on nam daną rzecz np. img:hover{border-bottom: color: red} to jak najedziemy na zdjęcia to zaznaczy je/podkreśli je na czerwono*/
+
+.active {
+    background-color: crimson;
+}
+/* RESPONSYWNOŚĆ - to że strona wygląda tak samo zarówno w wąskim położeniu jak i w szerokim*/
+
+article {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+article h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 10% 20px 10%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid crimson;
+}
+
+img.left {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 25%;
+    border-radius: 0% 50% 0% 30%;
+}
+
+article p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+}
+/* article, img, itd to są  selektory*/
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
